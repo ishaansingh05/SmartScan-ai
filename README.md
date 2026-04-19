@@ -10,6 +10,7 @@ The model uses **EfficientNetB2 (transfer learning)** for classification and **G
 ## 🔄 Project Pipeline
 
 - ### 1. Data Collection
+Path for data: "C:\Users\hp\Downloads\SmartScan_phase1\original_dataset"
 The dataset consists of four classes of brain MRI images:
 - Glioma Tumor
 - Meningioma Tumor
