@@ -613,6 +613,6 @@ It helps support the project and encourages continued development.
 
 *A custom Transfer Learning model built on a frozen MobileNetV2 backbone with a task-specific classification head and enhanced with Explainable AI through GradCAM.*
 
-**Built with ❤️ using Python, TensorFlow, Streamlit, and Explainable AI.**
+**Built with ❤️ using Python, TensorFlow, HuggingFace, and Explainable AI.**
 
 </div>
