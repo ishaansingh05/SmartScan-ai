@@ -27,7 +27,7 @@ assets/homepage.png
 ```
 
 <p align="center">
-  <img src="assets/homepage.png" width="90%">
+  <img src="assets/Screenshot 2026-06-16 180003.png" width="90%">
 </p>
 
 ---
