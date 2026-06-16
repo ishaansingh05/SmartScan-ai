@@ -29,11 +29,9 @@
 <img src="assets/homepage.png" width="80%">
 </p>
 
-> Replace the image above with the homepage screenshot of your application.
-
 ---
 
-# 📖 Overview
+#  Overview
 
 Brain tumor diagnosis from MRI scans is a challenging task that demands expert interpretation and careful examination of complex anatomical structures. Manual analysis can be time-consuming, and subtle abnormalities may not always be immediately apparent.
 
@@ -62,7 +60,7 @@ This architecture combines the efficiency of pretrained computer vision models w
 
 ---
 
-# ✨ Key Features
+#  Key Features
 
 - 🧠 Automatic classification of brain MRI scans into four categories
 - 🚀 Custom Transfer Learning model (`best_brain_tumor_model.keras`)
@@ -77,7 +75,7 @@ This architecture combines the efficiency of pretrained computer vision models w
 
 ---
 
-# 💡 Why SmartScan?
+#  Why SmartScan?
 
 Many deep learning models produce predictions without revealing how those decisions were made.
 
@@ -102,7 +100,7 @@ The model predicts one of four diagnostic classes:
 
 ---
 
-# 🏗️ Model Architecture
+#  Model Architecture
 
 The core inference engine powering SmartScan is **`best_brain_tumor_model.keras`**, a custom deep learning model created specifically for this project.
 
@@ -131,7 +129,7 @@ This saved model is loaded directly by the Streamlit application during inferenc
 
 ---
 
-# 🚀 Transfer Learning Strategy
+#  Transfer Learning Strategy
 
 Training a deep neural network entirely from scratch requires massive datasets and significant computational resources.
 
@@ -154,7 +152,7 @@ The final trained network is exported as **`best_brain_tumor_model.keras`**, whi
 
 ---
 
-# 🔄 Data Preprocessing Pipeline
+#  Data Preprocessing Pipeline
 
 Before training and inference, every MRI image is standardized through a carefully designed preprocessing pipeline.
 
@@ -170,7 +168,7 @@ This preprocessing guarantees that all inputs are transformed into a uniform for
 
 ---
 
-# 🔀 Data Augmentation Strategy
+#  Data Augmentation Strategy
 
 Medical imaging datasets are often limited in size, making models susceptible to overfitting.
 
@@ -200,7 +198,7 @@ GradCAM analyzes the gradients flowing through the final convolutional layers an
 
 This transforms SmartScan from a black-box classifier into a transparent and interpretable AI system.
 
-## 🎚️ Interactive Heatmap Control
+##  Interactive Heatmap Control
 
 Unlike many implementations that generate fixed overlays, SmartScan allows users to dynamically adjust the GradCAM opacity using an interactive slider.
 
@@ -215,7 +213,7 @@ Users can also download the generated GradCAM visualization directly from the ap
 
 ---
 
-# 🏛️ End-to-End Inference Pipeline
+#  End-to-End Inference Pipeline
 
 ```text
                    Brain MRI Scan
@@ -248,9 +246,9 @@ Users can also download the generated GradCAM visualization directly from the ap
 
 ---
 
-# 🖼️ Application Showcase
+#  Application Showcase
 
-## 🏠 Home Screen
+##  Home Screen
 
 <p align="center">
 <img src="assets/homepage.png" width="70%">
@@ -258,7 +256,7 @@ Users can also download the generated GradCAM visualization directly from the ap
 
 ---
 
-## 🎯 Prediction Interface
+##  Prediction Interface
 
 <p align="center">
 <img src="assets/prediction.png" width="60%">
@@ -266,14 +264,14 @@ Users can also download the generated GradCAM visualization directly from the ap
 
 ---
 
-## 🔥 GradCAM Visualization
+##  GradCAM Visualization
 
 <p align="center">
 <img src="assets/gradcam.png" width="60%">
 </p>
 
 The GradCAM module visually highlights the regions of the MRI scan that most strongly influenced the prediction while allowing users to adjust the overlay strength for enhanced interpretability.
-# 📊 Model Performance
+#  Model Performance
 
 The final model, **`best_brain_tumor_model.keras`**, was trained using a Transfer Learning approach and evaluated on a held-out test set to measure its classification capability across all four brain tumor categories.
 
@@ -287,8 +285,6 @@ Unlike relying solely on accuracy, SmartScan emphasizes comprehensive evaluation
 <img src="assets/accuracy.png" width="60%">
 </p>
 
-> Replace `accuracy.png` with your training and validation accuracy graph.
-
 ---
 
 ## 📉 Training Loss
@@ -296,8 +292,6 @@ Unlike relying solely on accuracy, SmartScan emphasizes comprehensive evaluation
 <p align="center">
 <img src="assets/loss.png" width="60%">
 </p>
-
-> Replace `loss.png` with your training and validation loss graph.
 
 ---
 
@@ -307,13 +301,11 @@ Unlike relying solely on accuracy, SmartScan emphasizes comprehensive evaluation
 <img src="assets/confusion_matrix.png" width="60%">
 </p>
 
-> Replace `confusion_matrix.png` with your actual confusion matrix.
-
 The confusion matrix provides a detailed view of how effectively the model distinguishes between Glioma, Meningioma, No Tumor, and Pituitary Tumor classes while identifying potential misclassifications.
 
 ---
 
-# ⚙️ Training Configuration
+#  Training Configuration
 
 The final model was trained with the following architecture and hyperparameters.
 
@@ -336,7 +328,7 @@ The final model was trained with the following architecture and hyperparameters.
 
 ---
 
-# 📋 Performance Summary
+#  Performance Summary
 
 > Replace the placeholder values below with your final evaluation metrics.
 
@@ -351,7 +343,7 @@ Evaluating multiple metrics provides a more reliable understanding of the model'
 
 ---
 
-# 📁 Project Structure
+#  Project Structure
 
 ```text
 SmartScan/
@@ -392,7 +384,7 @@ cd SmartScan
 
 ---
 
-## 📦 Install Dependencies
+##  Install Dependencies
 
 Install all required packages using:
 
@@ -402,7 +394,7 @@ pip install -r requirements.txt
 
 ---
 
-## ▶️ Run the Application Locally
+##  Run the Application Locally
 
 Start the Gradio application with:
 
@@ -418,7 +410,7 @@ Alternatively, you can access the deployed version directly on **Hugging Face Sp
 
 ---
 
-# 💻 How to Use
+#  How to Use
 
 ### Step 1 — Launch the Application
 
@@ -428,10 +420,10 @@ Run the application locally or open the deployed Hugging Face Space in your brow
 
 Upload a brain MRI image in any of the supported formats:
 
-- 🖼️ JPG
-- 🖼️ JPEG
-- 🖼️ PNG
-- 📦 NumPy (`.npy`)
+-  JPG
+-  JPEG
+-  PNG
+-  NumPy (`.npy`)
 
 ### Step 3 — Automatic Preprocessing
 
@@ -464,7 +456,7 @@ The generated GradCAM visualization can be downloaded for documentation, present
 
 ---
 
-# 🌐 Live Demo
+#  Live Demo
 
 SmartScan is deployed on **Hugging Face Spaces**, allowing anyone to use the application directly without local installation.
 
@@ -474,7 +466,7 @@ https://huggingface.co/spaces/ishaan05/brain-tumor-classifier
 
 ---
 
-# 🛠️ Technology Stack
+#  Technology Stack
 
 ## Programming Language
 
@@ -507,7 +499,7 @@ https://huggingface.co/spaces/ishaan05/brain-tumor-classifier
 
 ---
 
-# 🎓 Key Learning Outcomes
+#  Key Learning Outcomes
 
 This project demonstrates practical implementation of:
 
@@ -536,7 +528,7 @@ By combining prediction with explanation, the system becomes more transparent, i
 
 ---
 
-# 🎯 Future Improvements
+#  Future Improvements
 
 SmartScan provides a solid foundation that can be extended into more advanced medical imaging applications.
 
@@ -555,7 +547,7 @@ Potential future enhancements include:
 
 ---
 
-# 🤝 Contributing
+#  Contributing
 
 Contributions are always welcome.
 
@@ -570,7 +562,7 @@ Constructive suggestions and improvements are greatly appreciated.
 
 ---
 
-# 📜 License
+#  License
 
 This project is released under the **MIT License**.
 
@@ -578,7 +570,7 @@ You are free to use, modify, and distribute this software under the terms of the
 
 ---
 
-# ⚠️ Medical Disclaimer
+#  Medical Disclaimer
 
 **SmartScan is intended exclusively for educational and research purposes.**
 
@@ -588,7 +580,7 @@ Always consult qualified healthcare professionals for medical decisions.
 
 ---
 
-# 👨‍💻 Project Highlights
+#  Project Highlights
 
 SmartScan showcases the complete lifecycle of an AI-powered medical imaging system:
 
