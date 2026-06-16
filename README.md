@@ -62,16 +62,16 @@ This architecture combines the efficiency of pretrained computer vision models w
 
 #  Key Features
 
-- 🧠 Automatic classification of brain MRI scans into four categories
-- 🚀 Custom Transfer Learning model (`best_brain_tumor_model.keras`)
-- 🔥 Explainable AI through GradCAM visualizations
-- 🎚️ Adjustable GradCAM overlay intensity for interactive inspection
-- 📥 Downloadable GradCAM heatmaps
-- 🖼️ Support for JPG, JPEG, PNG, and NumPy (`.npy`) inputs
-- ⚡ Lightweight and efficient inference pipeline
-- 🎨 Interactive Gradio-powered user interface
-- 🌐 Deployed on Hugging Face Spaces
-- 🔬 Designed with transparency and interpretability in mind
+-  Automatic classification of brain MRI scans into four categories
+-  Custom Transfer Learning model (`best_brain_tumor_model.keras`)
+-  Explainable AI through GradCAM visualizations
+-  Adjustable GradCAM overlay intensity for interactive inspection
+-  Downloadable GradCAM heatmaps
+-  Support for JPG, JPEG, PNG, and NumPy (`.npy`) inputs
+-  Lightweight and efficient inference pipeline
+-  Interactive Gradio-powered user interface
+-  Deployed on Hugging Face Spaces
+-  Designed with transparency and interpretability in mind
 
 ---
 
@@ -176,11 +176,11 @@ To improve robustness and encourage better generalization, SmartScan expands the
 
 The augmentation pipeline includes:
 
-- 🔄 Horizontal Flipping
-- ↩️ Rotation by +15°
-- ↪️ Rotation by -15°
-- ☀️ Brightness Enhancement
-- 🌑 Brightness Reduction
+-  Horizontal Flipping
+-  Rotation by +15°
+-  Rotation by -15°
+-  Brightness Enhancement
+-  Brightness Reduction
 
 These transformations expose the network to realistic variations while preserving clinically relevant anatomical information.
 
@@ -534,16 +534,16 @@ SmartScan provides a solid foundation that can be extended into more advanced me
 
 Potential future enhancements include:
 
-- 🏥 DICOM image support
-- 🧠 Brain tumor segmentation
-- 📊 3D MRI volume processing
-- 🤖 Automated clinical report generation
-- 🌍 Multi-language interface
-- ☁️ REST API deployment
-- 📱 Mobile application support
-- 🔬 Ensemble deep learning models
-- 📋 PDF report export
-- 🩺 Clinical decision support integration
+-  DICOM image support
+-  Brain tumor segmentation
+-  3D MRI volume processing
+-  Automated clinical report generation
+-  Multi-language interface
+-  REST API deployment
+-  Mobile application support
+-  Ensemble deep learning models
+-  PDF report export
+-  Clinical decision support integration
 
 ---
 
