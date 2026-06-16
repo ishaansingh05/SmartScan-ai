@@ -2,17 +2,20 @@
 
 # 🧠 SmartScan: AI-Driven Brain Tumor Detection
 
-### *Harnessing Transfer Learning & Explainable AI for Intelligent MRI Classification*
+### *Leveraging Transfer Learning & Explainable AI for Intelligent MRI Classification*
 
 <p>
-  <img src="https://img.shields.io/badge/Python-3.10+-blue?style=for-the-badge" />
-  <img src="https://img.shields.io/badge/TensorFlow-2.x-orange?style=for-the-badge" />
-  <img src="https://img.shields.io/badge/MobileNetV2-Transfer%20Learning-success?style=for-the-badge" />
-  <img src="https://img.shields.io/badge/GradCAM-Explainable%20AI-red?style=for-the-badge" />
-  <img src="https://img.shields.io/badge/Streamlit-Web%20App-ff4b4b?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/Python-3.10+-3776AB?style=for-the-badge&logo=python&logoColor=white">
+  <img src="https://img.shields.io/badge/TensorFlow-2.x-FF6F00?style=for-the-badge&logo=tensorflow&logoColor=white">
+  <img src="https://img.shields.io/badge/MobileNetV2-Transfer%20Learning-2E8B57?style=for-the-badge">
+  <img src="https://img.shields.io/badge/GradCAM-Explainable%20AI-DC143C?style=for-the-badge">
+  <img src="https://img.shields.io/badge/HuggingFace-Deployed-FFD21E?style=for-the-badge&logo=huggingface&logoColor=black">
+  <img src="https://img.shields.io/badge/License-MIT-blue?style=for-the-badge">
 </p>
 
-*A deep learning-powered medical imaging application that classifies brain MRI scans into four categories while providing interpretable visual explanations through GradCAM.*
+### 🚀 An end-to-end deep learning application that combines **Transfer Learning**, **Explainable AI**, and an intuitive web interface to classify brain MRI scans while visually explaining every prediction.
+
+[🌐 Live Demo](https://huggingface.co/spaces/ishaan05/brain-tumor-classifier)
 
 </div>
 
@@ -20,128 +23,168 @@
 
 # 📸 Project Preview
 
-> **Replace the image below with a screenshot of your application's home page.**
-
-```text
-assets/homepage.png
-```
-
 <p align="center">
-  <img src="assets/Screenshot 2026-06-16 180003.png" width="90%">
+<img src="assets/homepage.png" width="95%">
 </p>
 
----
-
-# 🚀 Live Demo
-
-> Replace the link below with your deployed Hugging Face Space.
-
-**🔗 Try SmartScan Live:**  
-`https://huggingface.co/spaces/YOUR_USERNAME/YOUR_SPACE`
+> 📷 Replace the image above with the main screenshot of your application.
 
 ---
 
-# 📖 Overview
+# 🌟 Overview
 
-Brain tumor diagnosis from MRI scans is a challenging task that requires expertise and careful analysis. **SmartScan** leverages **Transfer Learning** and **Explainable AI** to assist in this process by automatically classifying MRI images into multiple tumor categories while visually explaining the reasoning behind each prediction.
+Early detection of brain tumors plays a critical role in improving treatment planning and patient outcomes. However, interpreting MRI scans requires significant medical expertise and can be time-consuming.
 
-Unlike conventional image classifiers that act as black boxes, SmartScan integrates **GradCAM (Gradient-weighted Class Activation Mapping)** to highlight the regions of the MRI scan that most influenced the model's prediction, making the system more transparent and interpretable.
+**SmartScan** is an AI-powered brain tumor classification system that assists this process by automatically analyzing MRI images using a fine-tuned **MobileNetV2** architecture based on **Transfer Learning**.
 
-The application provides an intuitive interface where users can upload MRI images and instantly receive:
+Unlike traditional deep learning models that simply output a prediction, SmartScan integrates **GradCAM (Gradient-weighted Class Activation Mapping)** to provide visual explanations, allowing users to understand *why* the model arrived at its decision.
 
-- AI-powered tumor classification
-- Confidence scores for every class
-- Visual heatmap explanations
-- Downloadable GradCAM overlays
+The project bridges the gap between performance and interpretability by combining state-of-the-art computer vision techniques with an intuitive user interface.
 
 ---
 
-# ✨ Key Features
+# 🎯 Key Highlights
 
-## 🧠 Intelligent Brain Tumor Classification
-
-Classifies MRI scans into four categories:
-
-- 🔴 Glioma
-- 🟠 Meningioma
-- 🟢 No Tumor
-- 🟡 Pituitary Tumor
+- 🧠 AI-powered classification of brain MRI scans
+- 🚀 Transfer Learning using MobileNetV2
+- 🔥 Explainable AI with GradCAM visualization
+- 🎚️ Adjustable heatmap overlay intensity
+- 📥 Downloadable GradCAM outputs
+- 🖼️ Support for JPG, PNG, JPEG and NumPy (`.npy`) images
+- ⚡ Fast real-time inference
+- 🎨 Modern dark-themed responsive interface
+- 🌐 Deployable on Hugging Face Spaces
+- 🔬 Research-oriented transparency for medical imaging
 
 ---
 
-## 🚀 Transfer Learning with MobileNetV2
+# 💡 Why SmartScan?
 
-Instead of training a convolutional neural network from scratch, SmartScan utilizes **MobileNetV2** pretrained on ImageNet and fine-tunes it for brain MRI classification.
+Most medical image classification models behave like black boxes—they provide predictions without revealing the reasoning behind them.
 
-Benefits include:
+SmartScan was designed with a different philosophy.
+
+Rather than only identifying the tumor category, it enables users to **visualize the regions of the MRI scan that influenced the prediction** through GradCAM heatmaps.
+
+Additionally, users can dynamically adjust the heatmap intensity, allowing seamless comparison between the original MRI and the model's activation regions.
+
+This emphasis on explainability makes the system more transparent, trustworthy, and educational.
+
+---
+
+# 🧠 Brain Tumor Categories
+
+The model classifies MRI scans into four categories:
+
+| Category | Description |
+|------------|------------------------------------------------|
+| 🔴 Glioma | Tumor arising from glial cells in the brain |
+| 🟠 Meningioma | Tumor originating from the meninges |
+| 🟢 No Tumor | MRI scan without detectable tumor |
+| 🟡 Pituitary Tumor | Tumor affecting the pituitary gland |
+
+---
+
+# 🚀 Transfer Learning
+
+Training deep convolutional neural networks entirely from scratch typically requires millions of labeled images and extensive computational resources.
+
+SmartScan instead employs **Transfer Learning**, where a pretrained **MobileNetV2** model serves as the backbone for feature extraction.
+
+The pretrained network has already learned rich visual representations from millions of images on ImageNet.
+
+By fine-tuning these learned representations for medical imaging, the model can efficiently adapt to brain MRI classification while requiring significantly less data and training time.
+
+## Advantages
 
 - Faster convergence
-- Better feature extraction
-- Improved performance on limited medical datasets
-- Lower computational cost
+- Improved feature extraction
+- Better performance on limited datasets
+- Lower computational requirements
 - Reduced overfitting
-
-Transfer learning enables the model to reuse rich visual representations learned from millions of images while adapting specifically to medical imaging.
-
----
-
-## 🔥 Explainable AI with GradCAM
-
-SmartScan doesn't just make predictions—it explains them.
-
-GradCAM generates heatmaps that highlight the regions of the MRI image responsible for the final classification, improving transparency and helping users understand the model's decision-making process.
+- Stronger generalization on unseen images
 
 ---
 
-## 📊 Confidence Visualization
+# 🔥 Explainable AI with GradCAM
 
-Instead of showing only the predicted class, SmartScan displays probability scores for every category through intuitive confidence bars.
+Artificial Intelligence should not only make predictions—it should explain them.
 
----
+SmartScan integrates **Gradient-weighted Class Activation Mapping (GradCAM)** to visualize the regions of the MRI scan that contribute most strongly to the final prediction.
 
-## 📥 Downloadable Heatmaps
+Instead of functioning as a black box, the model highlights clinically relevant areas directly on the original image.
 
-Users can export GradCAM visualizations for documentation, analysis, or educational purposes.
+### Interactive Heatmap Control
 
----
+One of SmartScan's distinguishing features is its **interactive heatmap intensity slider**.
 
-## 🖼️ Multiple Input Formats
+Users can dynamically adjust the GradCAM overlay strength, allowing them to:
 
-Supports:
+- Better inspect highlighted regions
+- Compare the original MRI with the activation map
+- Improve visualization clarity
+- Generate customized explainability outputs
 
-- JPG
-- JPEG
-- PNG
-- NumPy (`.npy`) arrays
+The resulting heatmap can also be downloaded for documentation or further analysis.
 
 ---
 
 # 🏗️ System Architecture
 
 ```text
-                  MRI Scan
-                      │
-                      ▼
-             Image Preprocessing
-          Resize → Normalize → RGB
-                      │
-                      ▼
-        MobileNetV2 (Transfer Learning)
-                      │
-                      ▼
-          Fine-Tuned Classification Head
-                      │
-                      ▼
-            Softmax Probability Output
-                      │
-        ┌─────────────┴─────────────┐
-        │                           │
-        ▼                           ▼
-  Tumor Prediction            GradCAM Generator
-        │                           │
-        └─────────────┬─────────────┘
-                      ▼
-        Interactive Web Visualization
+                    Brain MRI Scan
+                           │
+                           ▼
+                  Image Preprocessing
+            Resize → Normalize → RGB Conversion
+                           │
+                           ▼
+          MobileNetV2 Backbone (Transfer Learning)
+                           │
+                           ▼
+             Fine-Tuned Classification Layers
+                           │
+                           ▼
+                 Brain Tumor Prediction
+                           │
+             ┌─────────────┴─────────────┐
+             │                           │
+             ▼                           ▼
+      Predicted Category          GradCAM Generation
+             │                           │
+             └─────────────┬─────────────┘
+                           ▼
+             Interactive Explainable Output
+```
+
+---
+
+# ⚙️ Model Pipeline
+
+```text
+MRI Upload
+      │
+      ▼
+Image Preprocessing
+      │
+      ▼
+Transfer Learning
+(MobileNetV2)
+      │
+      ▼
+Fine-Tuned Classification
+      │
+      ▼
+Predicted Tumor Category
+      │
+      ▼
+GradCAM Heatmap
+      │
+      ▼
+Adjustable Overlay
+      │
+      ▼
+Download Result
 ```
 
 ---
@@ -170,26 +213,9 @@ SmartScan/
 
 ---
 
-# 🧪 Classification Categories
-
-| Class | Description |
-|----------|------------------------------------------------|
-| 🔴 Glioma | Tumor originating from glial cells |
-| 🟠 Meningioma | Tumor arising from the meninges |
-| 🟢 No Tumor | MRI scan without detectable tumor |
-| 🟡 Pituitary | Tumor affecting the pituitary gland |
-
----
-
 # 🖼️ User Interface
 
-## Home Screen
-
-> Replace with:
-
-```text
-assets/homepage.png
-```
+## 🏠 Home Screen
 
 <p align="center">
 <img src="assets/homepage.png" width="90%">
@@ -197,13 +223,7 @@ assets/homepage.png
 
 ---
 
-## Prediction Output
-
-> Replace with:
-
-```text
-assets/prediction.png
-```
+## 🔍 Prediction Output
 
 <p align="center">
 <img src="assets/prediction.png" width="90%">
@@ -211,230 +231,321 @@ assets/prediction.png
 
 ---
 
-## GradCAM Visualization
-
-> Replace with:
-
-```text
-assets/gradcam.png
-```
+## 🔥 GradCAM Visualization
 
 <p align="center">
 <img src="assets/gradcam.png" width="90%">
 </p>
 
+The GradCAM visualization highlights the regions that contributed most strongly to the model's decision while allowing users to customize overlay intensity through an interactive slider.
 ---
 
-# 📈 Model Performance
+# 📊 Model Performance
 
-## Training Accuracy
+SmartScan was trained using a **Transfer Learning** approach built upon **MobileNetV2**, enabling efficient feature extraction and strong generalization even with comparatively limited medical imaging data.
 
-> Replace with:
+The model's performance should be evaluated using multiple metrics rather than accuracy alone, as balanced evaluation is crucial in medical AI applications.
 
-```text
-assets/accuracy.png
-```
+## 📈 Training Accuracy
 
 <p align="center">
-<img src="assets/accuracy.png" width="80%">
+<img src="assets/accuracy.png" width="85%">
 </p>
+
+> Replace `accuracy.png` with your training/validation accuracy graph.
 
 ---
 
-## Training Loss
-
-> Replace with:
-
-```text
-assets/loss.png
-```
+## 📉 Training Loss
 
 <p align="center">
-<img src="assets/loss.png" width="80%">
+<img src="assets/loss.png" width="85%">
 </p>
+
+> Replace `loss.png` with your training/validation loss graph.
 
 ---
 
-## Confusion Matrix
-
-> Replace with:
-
-```text
-assets/confusion_matrix.png
-```
+## 🎯 Confusion Matrix
 
 <p align="center">
 <img src="assets/confusion_matrix.png" width="80%">
 </p>
 
+> Replace `confusion_matrix.png` with your actual confusion matrix.
+
 ---
 
-## 📊 Performance Summary
-
-> Replace the placeholders below with your actual metrics.
+## 📋 Performance Metrics
 
 | Metric | Value |
-|----------|--------|
-| Test Accuracy | XX.XX% |
-| Precision | XX.XX% |
-| Recall | XX.XX% |
-| F1 Score | XX.XX% |
+|----------|---------|
+| Test Accuracy | **XX.XX%** |
+| Precision | **XX.XX%** |
+| Recall | **XX.XX%** |
+| F1-Score | **XX.XX%** |
+
+> Update the values above with your final evaluation results.
 
 ---
 
-# 🔬 Why Transfer Learning?
+# 🗂️ Dataset
 
-Training a deep convolutional neural network from scratch requires enormous datasets and computational resources.
+The model was trained on a curated collection of **Brain MRI images** containing four diagnostic categories:
 
-SmartScan instead adopts **Transfer Learning**, where a pretrained MobileNetV2 model serves as a feature extractor before being fine-tuned on brain MRI images.
+- 🔴 Glioma
+- 🟠 Meningioma
+- 🟢 No Tumor
+- 🟡 Pituitary Tumor
 
-| Training from Scratch | Transfer Learning |
-|-----------------------|------------------|
-| Huge dataset required | Works well on limited datasets |
-| Slow convergence | Faster training |
-| High computation | Efficient |
-| Higher overfitting risk | Better generalization |
-| Learns features from zero | Reuses pretrained knowledge |
+The images were resized to **224 × 224 RGB** before being passed through the neural network.
 
-This approach significantly improves practical performance while reducing training time.
+## Preprocessing Pipeline
 
----
+- Image resizing
+- RGB conversion
+- Pixel normalization
+- Tensor preparation
+- Model inference
 
-# 🔥 Explainability with GradCAM
-
-Medical AI systems should provide transparency alongside predictions.
-
-GradCAM computes gradients flowing into the final convolutional layer and projects them back onto the original image, producing a localization heatmap that reveals where the network focused while making its prediction.
-
-Benefits include:
-
-- Increased trust in predictions
-- Better interpretability
-- Visual verification
-- Research and educational value
+The preprocessing pipeline ensures consistency across all inputs and optimizes compatibility with the MobileNetV2 architecture.
 
 ---
 
-# ⚙️ Installation
+# 🚀 Installation
 
-Clone the repository:
+## Clone the repository
 
 ```bash
 git clone https://github.com/YOUR_USERNAME/SmartScan.git
 ```
 
-Move into the project:
+## Navigate into the project
 
 ```bash
 cd SmartScan
 ```
 
-Install dependencies:
+## Install dependencies
 
 ```bash
 pip install -r requirements.txt
 ```
 
-Run the application:
+## Run the application
 
 ```bash
 streamlit run app.py
 ```
 
----
-
-# 💻 Usage
-
-1. Launch the application.
-2. Upload an MRI scan.
-3. The model preprocesses the image.
-4. MobileNetV2 performs inference.
-5. The predicted class and confidence scores are displayed.
-6. GradCAM generates an explainability heatmap.
-7. Download the visualization if desired.
+The application will launch locally in your browser.
 
 ---
 
-# 🛠️ Tech Stack
+# 🌐 Live Demo
 
-### Languages
+The project is deployed on **Hugging Face Spaces**, allowing users to interact with the model directly without local installation.
+
+### 🔗 Live Application
+
+https://huggingface.co/spaces/ishaan05/brain-tumor-classifier
+
+---
+
+# 💻 How It Works
+
+### Step 1 — Upload MRI
+
+Upload a brain MRI scan in one of the supported formats:
+
+- JPG
+- JPEG
+- PNG
+- NumPy (`.npy`)
+
+---
+
+### Step 2 — Automatic Preprocessing
+
+The application automatically:
+
+- Resizes the image
+- Converts it to RGB
+- Normalizes pixel values
+- Prepares the tensor for inference
+
+---
+
+### Step 3 — AI Prediction
+
+The fine-tuned MobileNetV2 model analyzes the MRI and predicts one of the four supported classes.
+
+---
+
+### Step 4 — Explainability
+
+GradCAM generates an activation heatmap highlighting the regions that contributed most strongly to the prediction.
+
+Unlike static implementations, SmartScan allows users to **adjust the heatmap intensity in real time**, making it easier to inspect subtle patterns while preserving visibility of the original MRI.
+
+---
+
+### Step 5 — Export Results
+
+The generated GradCAM visualization can be downloaded for documentation, research, or educational purposes.
+
+---
+
+# 🎨 Technologies Used
+
+## Programming Language
 
 - Python
 
-### Deep Learning
+## Deep Learning
 
 - TensorFlow
 - Keras
 - MobileNetV2
 - Transfer Learning
 
-### Computer Vision
+## Computer Vision
 
 - OpenCV
-- Pillow
 - NumPy
+- Pillow
 
-### Explainability
+## Explainable AI
 
 - GradCAM
 
-### Visualization
+## Visualization
 
 - Matplotlib
 
-### Frontend
+## Frontend
 
 - Streamlit
 
-### Deployment
+## Deployment
 
 - Hugging Face Spaces
 
 ---
 
-# 🎯 Future Improvements
+# 🏆 Technical Highlights
 
-- Support for DICOM images
-- Brain tumor segmentation
-- 3D MRI volume analysis
-- Clinical report generation
-- Multi-modal medical imaging
-- Confidence calibration
-- Attention map comparison
-- Ensemble deep learning models
+- Fine-tuned **MobileNetV2** using Transfer Learning
+- Implemented **GradCAM** for explainable predictions
+- Built a fully interactive medical imaging interface
+- Developed customizable heatmap visualization with adjustable intensity
+- Added support for multiple image formats including `.npy`
+- Integrated downloadable GradCAM outputs
+- Optimized for lightweight deployment on Hugging Face Spaces
 
 ---
 
-# 📚 Learning Outcomes
+# 🎓 Key Concepts Demonstrated
 
-This project demonstrates practical implementation of:
+This project showcases practical implementation of:
 
 - Deep Learning
-- Medical Image Classification
+- Convolutional Neural Networks
 - Transfer Learning
-- Explainable AI
+- Explainable AI (XAI)
+- Medical Image Classification
 - Computer Vision
-- CNN Fine-Tuning
+- Model Fine-Tuning
 - Interactive AI Applications
-- Model Deployment
 - Human-Centered AI
+- Deployment of ML Models
 
 ---
 
-# ⚠️ Disclaimer
+# 🔬 Why Explainability Matters
 
-SmartScan is developed **for educational and research purposes only**.
+High-performing models alone are insufficient in healthcare.
 
-It should **not** be used as a substitute for professional medical diagnosis, clinical evaluation, or healthcare decision-making.
+Medical professionals require insight into *why* a prediction was made before trusting automated systems.
 
-Always consult qualified medical professionals for diagnosis and treatment.
+By integrating GradCAM, SmartScan transforms neural network outputs into interpretable visualizations, enabling users to inspect the decision-making process rather than accepting predictions blindly.
+
+This improves transparency, accountability, and confidence in AI-assisted diagnosis.
+
+---
+
+# 📈 Future Scope
+
+SmartScan provides a strong foundation that can be extended into more advanced clinical applications.
+
+Potential improvements include:
+
+- 🩺 DICOM image support
+- 🧠 Brain tumor segmentation
+- 📊 3D MRI volume processing
+- 🤖 AI-generated diagnostic summaries
+- 🌍 Multi-language support
+- ☁️ REST API for remote inference
+- 🏥 PACS integration for hospitals
+- 🔬 Ensemble deep learning models
+- 📋 Automated PDF report generation
+- 📱 Mobile application deployment
+
+---
+
+# 🤝 Contributing
+
+Contributions are welcome.
+
+If you would like to improve SmartScan, feel free to:
+
+- Fork the repository
+- Create a feature branch
+- Commit your changes
+- Submit a pull request
+
+Constructive suggestions and improvements are always appreciated.
+
+---
+
+# 📜 License
+
+This project is released under the **MIT License**.
+
+You are free to use, modify, and distribute the software in accordance with the license terms.
+
+---
+
+# ⚠️ Medical Disclaimer
+
+SmartScan is intended **solely for educational, research, and demonstration purposes**.
+
+It is **not a certified medical device** and should **not be used for clinical diagnosis or treatment decisions**.
+
+Any medical concerns should always be evaluated by qualified healthcare professionals.
+
+---
+
+# 👨‍💻 About the Project
+
+SmartScan was developed to explore the intersection of **Deep Learning**, **Transfer Learning**, and **Explainable AI** within the field of medical image analysis.
+
+By combining efficient CNN architectures with transparent visualization techniques, the project demonstrates how modern AI systems can move beyond prediction accuracy to provide meaningful and interpretable insights.
+
+The objective is not only to classify MRI scans but also to make those predictions understandable and trustworthy.
 
 ---
 
 <div align="center">
 
-## ⭐ If you found this project helpful, consider giving it a star!
+# ⭐ Star this repository if you found it useful!
 
-*Built with Deep Learning, Transfer Learning, and Explainable AI.*
+### If SmartScan helped you learn something new or inspired your own projects, consider giving it a ⭐ on GitHub.
+
+---
+
+### 🧠 *Making Medical AI More Transparent with Transfer Learning & Explainable AI.*
+
+**Built with ❤️ using Python, TensorFlow, MobileNetV2, and GradCAM**
 
 </div>
