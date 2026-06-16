@@ -23,7 +23,7 @@
 
 ---
 
-# 📸 Project Preview
+#  Project Preview
 
 <p align="center">
 <img src="assets/homepage.png" width="80%">
@@ -45,7 +45,7 @@ The result is a fast, interpretable, and interactive medical imaging assistant d
 
 ---
 
-# 🧠 Model Used
+#  Model Used
 
 SmartScan performs inference using **`best_brain_tumor_model.keras`**, a custom-trained deep learning model specifically developed for this project.
 
@@ -87,7 +87,7 @@ This emphasis on interpretability makes SmartScan a practical demonstration of r
 
 ---
 
-# 🩺 Classification Categories
+#  Classification Categories
 
 The model predicts one of four diagnostic classes:
 
