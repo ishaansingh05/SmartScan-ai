@@ -125,7 +125,7 @@ Only these newly added layers were trained on the MRI dataset, producing the fin
 best_brain_tumor_model.keras
 ```
 
-This saved model is loaded directly by the Streamlit application during inference.
+This saved model is loaded directly by the HuggingFace space during inference.
 
 ---
 
@@ -329,8 +329,6 @@ The final model was trained with the following architecture and hyperparameters.
 ---
 
 #  Performance Summary
-
-> Replace the placeholder values below with your final evaluation metrics.
 
 | Metric | Value |
 |----------|---------|
